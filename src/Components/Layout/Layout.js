@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Layout.css";
 const layout = (props) => (
-  <div>
+  <div className={classes.Layout}>
     <header className={classes.Header}>
       <div className={classes.Logo}></div>
     </header>

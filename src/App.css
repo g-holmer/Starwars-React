@@ -1,4 +1,7 @@
 .App {
-    background: black;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: url('./vlcsnap-2018-06-29-13h57m41s318_4x.jpg') 100% no-repeat;
+    background-size: cover;
+    min-height: 100vh;
 }

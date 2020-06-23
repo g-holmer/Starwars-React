@@ -18,7 +18,7 @@ const characters = (props) => {
       </div>
     );
   } else {
-    showCharacters = <div className={classes.Error}>Nothing found</div>;
+    showCharacters = <div className={classes.Characters}><div className={classes.Error}>Nothing found</div></div>;
   }
   return <div>{showCharacters}</div>;
 };

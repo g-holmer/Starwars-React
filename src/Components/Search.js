@@ -2,7 +2,7 @@ import React from "react";
 import classes from './Search.css'
 const search = (props) => (
     <div className={classes.Search}>
-  <input className={classes.Input} onChange={props.filter}/>
+  <input placeholder="Search" className={classes.Input} onChange={props.filter}/>
   </div>
 );
 
