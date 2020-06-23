@@ -1,0 +1,16 @@
+.Search {
+    display: flex;
+    justify-content: center;
+}
+.Input {
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: F7E955;
+    background-color: gray;
+    color: #000000;
+    border-style: solid;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+}

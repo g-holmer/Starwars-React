@@ -1,0 +1,11 @@
+.Header {
+    display: flex;
+    justify-content: center;
+}
+.Logo {
+    background: url('./images/starwars.jpg') center center no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: 150px;
+    text-align: center;
+}

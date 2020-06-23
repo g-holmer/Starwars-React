@@ -1,0 +1,13 @@
+.Characters {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Error {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    color: #F7E955;
+}

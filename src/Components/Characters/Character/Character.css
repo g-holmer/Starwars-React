@@ -1,0 +1,10 @@
+.Character {
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #F7E955;
+  }
+  .Character:hover {
+      background: rgb(73, 73, 73);
+  }
+  
