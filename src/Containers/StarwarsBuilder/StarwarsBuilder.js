@@ -62,13 +62,15 @@ class StarwarsBuilder extends Component {
     });
   }
   fetchAPIData(url) {
+    this.setState({ loading: true }, () => {
     axios
       .get(url)
       .then((response) => {
-        this.setState({ characters: response.data.results });
-        this.setState({ data: response.data });
+        this.setState({ data: response.data, loading: false, characters: response.data.results });
+        
       })
       .catch((error) => console.log(error));
+    });
   }
   nextPageHandler = () => {
     if (this.state.data.next !== null) {
@@ -126,6 +128,7 @@ class StarwarsBuilder extends Component {
     }));
   };
   render() {
+      
     if (this.state.showCharacterInfo) {
       return (
         <CharacterInfo
@@ -150,6 +153,7 @@ class StarwarsBuilder extends Component {
           <Characters
             chars={this.state.characters}
             showInfo={this.showInfoHandler}
+            loading={this.state.loading}
           />
         </div>
         <Pagination
