@@ -28,7 +28,7 @@ class StarwarsBuilder extends Component {
     nothingFound: false,
   };
   componentDidMount() {
-    let url = "http://swapi.dev/api/people/?page=";
+    let url = "https://swapi.dev/api/people/?page=";
     this.fetchAPIData(url);
     this.fetchAllAPIData();
   }
@@ -38,7 +38,7 @@ class StarwarsBuilder extends Component {
     const promises = list.map(
       (number) =>
         new Promise((resolve) => {
-          var url = "http://swapi.dev/api/people/?page=" + number;
+          var url = "https://swapi.dev/api/people/?page=" + number;
           axios
             .get(url)
             .then((response) => {
@@ -98,7 +98,7 @@ class StarwarsBuilder extends Component {
       let str = this.state.data.next;
       let res = str.replace(/\D/g, "");
       let page = res - 1;
-      this.fetchAPIData("http://swapi.dev/api/people/?page=" + page);
+      this.fetchAPIData("https://swapi.dev/api/people/?page=" + page);
     }
   };
 
