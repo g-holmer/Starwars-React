@@ -5,7 +5,7 @@
     max-width: 500px;
     background: black;
     border-radius: 50px;
-    max-height: 702px;
+    min-height: 782px;
 }
 .Header {
     display: flex;
