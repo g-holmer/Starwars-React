@@ -115,15 +115,15 @@ class StarwarsBuilder extends Component {
   };
 
   showInfoHandler = (index) => {
-    const name = this.state.charactersAll[index].name;
-    const gender = this.state.charactersAll[index].gender;
-    const height = this.state.charactersAll[index].height;
-    const skin_color = this.state.charactersAll[index].skin_color;
-    const mass = this.state.charactersAll[index].mass;
-    const homeworld = this.state.charactersAll[index].homeworld;
-    const hair_color = this.state.charactersAll[index].hair_color;
+    const name = this.state.characters[index].name;
+    const gender = this.state.characters[index].gender;
+    const height = this.state.characters[index].height;
+    const skin_color = this.state.characters[index].skin_color;
+    const mass = this.state.characters[index].mass;
+    const homeworld = this.state.characters[index].homeworld;
+    const hair_color = this.state.characters[index].hair_color;
     const doesShow = this.state.showCharacterInfo;
-    const films = this.state.charactersAll[index].films;
+    const films = this.state.characters[index].films;
 
     this.setState(() => ({
       characterInfo: {
