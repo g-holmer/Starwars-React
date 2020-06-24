@@ -63,25 +63,37 @@ class StarwarsBuilder extends Component {
   }
   fetchAPIData(url) {
     this.setState({ loading: true }, () => {
-    axios
-      .get(url)
-      .then((response) => {
-        this.setState({ data: response.data, loading: false, characters: response.data.results });
-        
-      })
-      .catch((error) => console.log(error));
+      axios
+        .get(url)
+        .then((response) => {
+          this.setState({
+            data: response.data,
+            loading: false,
+            characters: response.data.results,
+          });
+        })
+        .catch((error) => console.log(error));
     });
   }
   nextPageHandler = () => {
     if (this.state.data.next !== null) {
       let url = this.state.data.next;
-      this.fetchAPIData(url);
+      var position = 6;
+      var output = [url.slice(4, position), url.slice(position)].join("");
+      const https = "https" + output;
+
+      this.fetchAPIData(https);
     }
   };
   previousPageHandler = () => {
     if (this.state.data.previous !== null) {
       let url = this.state.data.previous;
-      this.fetchAPIData(url);
+
+      var position = 6;
+      var output = [url.slice(4, position), url.slice(position)].join("");
+      const https = "https" + output;
+
+      this.fetchAPIData(https);
     }
   };
   filterCharactersHandler = (event) => {
@@ -128,7 +140,6 @@ class StarwarsBuilder extends Component {
     }));
   };
   render() {
-      
     if (this.state.showCharacterInfo) {
       return (
         <CharacterInfo
