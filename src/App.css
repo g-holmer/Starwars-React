@@ -1,11 +1,10 @@
 .App {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: url("./vlcsnap-2018-06-29-13h57m41s318_4x.jpg") 100% no-repeat;
-    background-size: cover;
-    min-height: 100vh;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-image: url("./Containers/unnamed.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
