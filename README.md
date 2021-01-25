@@ -1,4 +1,5 @@
 ### Application for Redmind Internship
+## Made using React, working against API.
 ### Redmind API
 This is a Starwars Character List.<br>
 This contains:<br>
