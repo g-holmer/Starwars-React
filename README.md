@@ -1,6 +1,11 @@
-How to use the downloaded files
+### This is a React Project
 
-1) Run "npm install" in the extracted folder
-2) Run "npm start" to view the project
+### Redmind API
 
-Compare my code to yours to solve issues you might encounter. You may also copy the content of src/ into your own project's src/ folder to use your project setup (which might've been created with a different create-react-app version) and still use my code.
+Application for Redmind Internship.<br>
+This is a Starwars API.<br>
+This contains:<br>
+*List View<br>
+*Detail View<br>
+*Search Character View<br>
+*Pagination<br>

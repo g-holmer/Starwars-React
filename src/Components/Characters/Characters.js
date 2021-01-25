@@ -18,10 +18,18 @@ const characters = (props) => {
       </div>
     );
   } else {
-    showCharacters = <div className={classes.Characters}><div className={classes.Error}>Nothing found</div></div>;
+    showCharacters = (
+      <div className={classes.Characters}>
+        <div className={classes.Error}>Nothing found</div>
+      </div>
+    );
   }
-  if(props.loading){
-      showCharacters = <div className={classes.Characters}><div className={classes.Error}>Loading...</div></div>
+  if (props.loading) {
+    showCharacters = (
+      <div className={classes.Characters}>
+        <div className={classes.Error}>Loading...</div>
+      </div>
+    );
   }
   return <div>{showCharacters}</div>;
 };
