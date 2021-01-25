@@ -1,9 +1,6 @@
-### This is a React Project
-
+### Application for Redmind Internship
 ### Redmind API
-
-Application for Redmind Internship.<br>
-This is a Starwars API.<br>
+This is a Starwars Character List.<br>
 This contains:<br>
 *List View<br>
 *Detail View<br>
